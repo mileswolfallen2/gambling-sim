@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambling Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-menu">
+        <h1>Gambling Simulator</h1>
+        <button id="blackjack-button">Blackjack</button>
+        <button id="plinko-button">Plinko</button>
+        <p id="message"></p>
+    </div>
+
+    <div id="blackjack-game" class="game-section hidden">
+        <h2>Blackjack</h2>
+        <p>Balance: $<span id="blackjack-balance">100</span></p>
+        <label for="blackjack-bet">Bet:</label>
+        <input type="number" id="blackjack-bet" value="10">
+        <button id="blackjack-deal">Deal</button>
+        <div id="blackjack-player-hand">
+            <h3>Your Hand:</h3>
+            <p id="blackjack-player-cards"></p>
+            <p id="blackjack-player-value"></p>
+        </div>
+        <div id="blackjack-dealer-hand">
+            <h3>Dealer Hand:</h3>
+            <p id="blackjack-dealer-cards"></p>
+            <p id="blackjack-dealer-value"></p>
+        </div>
+        <button id="blackjack-hit">Hit</button>
+        <button id="blackjack-stand">Stand</button>
+        <p id="blackjack-result"></p>
+    </div>
+
+    <div id="plinko-game" class="game-section hidden">
+        <h2>Plinko</h2>
+        <p>Balance: $<span id="plinko-balance">100</span></p>
+        <label for="plinko-bet">Bet:</label>
+        <input type="number" id="plinko-bet" value="10">
+        <button id="plinko-drop">Drop Chip</button>
+        <p id="plinko-result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
